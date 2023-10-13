@@ -28,6 +28,7 @@ local options = {
 
 		onSelect = function (data)
             if canOpenTarget(data.entity) then
+				TriggerServerEvent('wx_steal:showNotif',GetPlayerServerId(NetworkGetPlayerIndexFromPed(data.entity)))
                 -- [ Check if progress bar is enabled ]
                 if wx.Progress then
                     if lib.progressBar({
