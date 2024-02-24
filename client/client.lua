@@ -22,8 +22,10 @@ local options = {
         -- You may uncomment this function to automatically hide the target if player cannot be searched (is not dead etc...)
 
 		-- canInteract = function (entity)
-		-- 	canOpenTarget(entity)
-		-- 	return false
+		-- 	if not canOpenTarget(entity) then
+		-- 	    return false
+  --  end
+  --  return true
 		-- end,
 
 		onSelect = function (data)
